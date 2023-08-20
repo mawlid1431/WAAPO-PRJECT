@@ -8,6 +8,9 @@ const userRoute = require("./Routes/userRoute");
 const postRoute = require("./Routes/postRoute");
 const blogRoute = require("./Routes/blogRoute");
 const commentRoute = require("./Routes/commentRoute");
+
+//config Dotenv  
+
 dotenv.config({ path: "./.env" });
 require("./Models/userModel");
 require("./Models/postModel");

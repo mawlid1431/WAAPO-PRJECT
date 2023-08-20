@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = `mongodb+srv://${process.env.DBUsername}:${process.env.DBPassword}@cluster0.bq17ljx.mongodb.net/example`;
+const url = `mongodb+srv://${process.env.DBUsername}:${process.env.DBPassword}@cluster0.trmcbbq.mongodb.net/`;
 
 mongoose
   .connect(url)
@@ -9,4 +9,5 @@ mongoose
   })
   .catch((error) => {
     console.log("Not connected to DB", error);
+    console.log(url);
   });
